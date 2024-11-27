@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+</head>
+<body>
+    <h2>simple tables</h2>
+    <table border="">
+        <thead>
+            <tr>
+                <th>s.no</th>
+                <th>name</th>
+                <th>post</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>anand</td>
+                <td>tester</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>rith</td>
+                <td>developer</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>ravi</td>
+                <td>developer</td>
+            </tr>
+        </tbody>
+    </table> <hr>
+    <h2>table with rowspan</h2>
+    <table border="" width="30%">
+        <tr>
+            <td rowspan="2"bgcolor="grey">a</td><td>b</td><td>c</td>
+        </tr>
+        <tr>
+            <td>b</td><td>c</td>
+        </tr>
+        <tr>
+            <td>a</td><td>b</td><td rowspan="2"bgcolor="grey">c</td>
+        </tr>
+        <tr>
+            <td>a</td><td>b</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>table with colspan</h2>
+    <table border="" width="30%">
+        <tr>
+            <td>a</td><td>b</td><td>c</td>
+        </tr>
+        <tr>
+            <td>a</td><td colspan="2" bgcolor="grey">b</td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="grey">a</td><td>c</td>
+        </tr>
+        <tr>
+            <td>a</td><td>b</td><td>c</td>
+        </tr>
+    </table>
+
+<hr>
+<h2>tablw with colspan and rowspan</h2>
+<table border="" width="30%">
+    <tr>
+        <td colspan="2" rowspan="2" bgcolor="grey">a</td><td>c</td>
+    </tr>
+    <tr>
+        <td>c</td>
+    </tr>
+    <tr>
+        <td>a</td><td>b</td><td>c</td>
+    </tr>
+        
+</table>
+    <hr> <br>
+    <h2>task 1</h2>
+    
+    <table border="" width="30%">
+        <tr>
+            <td>a</td><td>b</td><td>c</td><td colspan="3" rowspan="3" bgcolor="grey"><img src="../assets/images/dog.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td>a</td><td>b</td><td>c</td>
+        </tr>
+        <tr>
+            <td>a</td><td>b</td><td>c</td>
+        </tr>
+        <tr>
+            <td colspan="3" rowspan="3"bgcolor="grey" ><img src="../assets/images/car.jpg" alt=""><td>d</td><td>e</td><td>f</td>
+        </tr>
+        <tr>
+            <td>d</td><td>e</td><td>f</td>
+        </tr>
+        <tr>
+            <td>d</td><td>e</td><td>f</td>
+        </tr>
+    </table>
+    <br><hr>
+    <h2>task 2</h2>
+    <table border="" width="30%">
+        <tr>
+            <td colspan="8">hello</td>
+        </tr>
+        <tr>
+            <td colspan="4">hiii</td><td colspan="4">hiii</td>
+        </tr>
+        <tr>
+            <td colspan="2">frnd</td><td colspan="2">frnd</td><td colspan="2">frnd</td><td colspan="2">frnd</td>
+        </tr>
+        <tr>
+            <td>hloo</td><td>hloo</td><td>hloo</td><td>hloo</td><td>hloo</td><td>hloo</td><td>hloo</td><td>hloo</td>
+        </tr>
+    </table>
+    <br><hr>
+    <h2>task 3</h2>
+    <table border="" width="30%">
+        <tr>
+            <td bgcolor="violet">a</td><td colspan="2" bgcolor="red">b</td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="pink">a</td><td bgcolor="grey">c</td>
+        </tr>
+        <tr>
+            <td bgcolor="violet">a</td><td bgcolor="grey">b</td><td bgcolor="orange">c</td>
+        </tr>
+        <tr>
+            <td bgcolor="green">a</td><td colspan="2" rowspan="2" bgcolor="black">b</td>
+        </tr>
+        <tr>
+            <td bgcolor="orange">a</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2" bgcolor="yellow">a</td><td bgcolor="blue">c</td>
+        </tr>
+        <tr>
+            <td bgcolor="red">c</td>
+        </tr>
+    </table>
+</body>
+</html>
