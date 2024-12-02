@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Signal</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            width: 200px;
+            height: 525px;
+            background-color: #ffffff;
+            border: 3px solid black;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .light {
+            width: 150px;
+            height: 150px;
+            border: 4px solid black;
+            border-radius: 50%;
+            background-color: #d3d3d3; /* Default inactive color */
+            transition: background-color 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="red" class="light"></div>
+        <div id="yellow" class="light"></div>
+        <div id="green" class="light"></div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+
+        function updateLights() {
+            // Turn off all lights
+            document.getElementById("red").style.backgroundColor = "#d3d3d3";
+            document.getElementById("yellow").style.backgroundColor = "#d3d3d3";
+            document.getElementById("green").style.backgroundColor = "#d3d3d3";
+
+            // Turn on the current light
+            if (currentIndex === 0) {
+                document.getElementById("red").style.backgroundColor = "red"; // Red light
+            } else if (currentIndex === 1) {
+                document.getElementById("yellow").style.backgroundColor = "yellow"; // Yellow light
+            } else if (currentIndex === 2) {
+                document.getElementById("green").style.backgroundColor = "green"; // Green light
+            }
+
+            // Move to the next light
+            currentIndex = (currentIndex + 1) % 3; // Loop between 0, 1, and 2
+        }
+
+        // Change lights every 3 seconds
+        setInterval(updateLights, 3000);
+    </script>
+</body>
+</html>
